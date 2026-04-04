@@ -13,17 +13,17 @@ export default function Card({ question, service, slug, points, icon }: CardProp
   const Icon = Icons[icon as keyof typeof Icons] as React.ElementType;
   return (
     <Link to={`/services/${slug}`}
-      className="group relative overflow-hidden rounded-2xl p-5 m-2 bg-white/5 border border-white/10 
-            transition-all duration-4 00 hover:bg-white/10 hover:scale-[1.02] cursor-pointer w-fit "
+      className="group relative overflow-hidden rounded-2xl pt-5 pr-5 pl-7 pb-5 m-2 bg-gray-900 border border-white/10 
+            transition-all duration-4 00 hover:bg-white/10 hover:scale-[1.02] cursor-pointer w-fit z-10 "
     >
-      <div className="absolute top-4 right-4 flex items-center justify-center w-10 h-10">
+      <div className="absolute top-4 right-4 flex items-center justify-center w-15 h-15">
         <div
-          className="absolute inset-0 bg-blue-500 opacity-0
+          className="absolute inset-0 bg-blue-500/70 opacity-0
                 group-hover:opacity-100 transition duration-800 text-center rounded-full blur-lg "
         ></div>
 
         <div className="relative text-blue-400 group-hover:scale-125 transition duration-400 flex items-center">
-          {Icon && <Icon className="w-5 h-5 text-cyber-teal" />}
+          {Icon && <Icon className="w-7 h-7 text-cyber-teal" />}
         </div>
       </div>
 

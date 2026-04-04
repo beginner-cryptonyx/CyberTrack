@@ -53,7 +53,7 @@ export default function OfferingCard({ offering, index }: OfferingCardProps) {
 
       {/* Hover accent line */}
       <div
-        className="absolute bottom-0 left-6 right-6 h-px bg-gradient-to-r 
+        className="absolute bottom-0 left-6 right-6 h-px bg-linear-to-r 
                    from-transparent via-blue-500/40 to-transparent 
                    opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       />
