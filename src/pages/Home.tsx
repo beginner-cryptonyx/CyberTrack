@@ -6,7 +6,7 @@ export function Home() {
   return (
     <div>
       <Hero></Hero>
-      <div className="grid grid-cols-4 gap-6 ">
+      <div className="grid grid-cols-4 gap-6 border-t border-white/10 pt-10 pb-30 mt-10">
         {services.map((service) => (
           <Card
             service={service.name}
@@ -17,19 +17,7 @@ export function Home() {
           ></Card>
         ))}
       </div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
-      <div>content</div>
+
     </div>
   );
 }
