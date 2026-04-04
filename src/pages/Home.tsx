@@ -14,6 +14,7 @@ export function Home() {
             points={service.cardPoints}
             icon={service.icon}
             key={service.name}
+            slug={service.slug}
           ></Card>
         ))}
       </div>

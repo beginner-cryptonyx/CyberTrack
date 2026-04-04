@@ -1,16 +1,18 @@
 import * as Icons from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface CardProps {
   question: string;
   service: string;
   points: string[];
+  slug: string
   icon: string;
 }
 
-export default function Card({ question, service, points, icon }: CardProps) {
+export default function Card({ question, service, slug, points, icon }: CardProps) {
   const Icon = Icons[icon as keyof typeof Icons] as React.ElementType;
   return (
-    <div
+    <Link to={`/services/${slug}`}
       className="group relative overflow-hidden rounded-2xl p-5 m-2 bg-white/5 border border-white/10 
             transition-all duration-4 00 hover:bg-white/10 hover:scale-[1.02] cursor-pointer w-fit "
     >
@@ -53,6 +55,6 @@ export default function Card({ question, service, points, icon }: CardProps) {
           Learn how we help →
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
