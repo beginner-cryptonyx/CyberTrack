@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.nav-item {
+    @apply cursor-pointer;
+}
+
