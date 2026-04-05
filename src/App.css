@@ -9,7 +9,7 @@
     @apply border outline-0 p-2 mt-1 py-3 border-cyber-blue/40 bg-black/30 focus:border-cyber-blue/60 rounded-sm;
 }
 .form-element{
-    @apply flex flex-col my-5 ;
+    @apply flex flex-col my-3 ;
     
 }
 .form-element>label{

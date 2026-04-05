@@ -13,10 +13,12 @@ function DesktopNav() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const [showService, setShowService] = useState<boolean>(false);
+  
   return (
-    <div className={`fixed top-0 z-10 w-full flex flex-row p-4 items-center justify-between ${scrolled ? "bg-cyber-navy/70 backdrop-blur-3xl": ""}`}>
-      <img src="CyberTrackLogo.webp" alt="" className="h-10 ml-4" />
+    <div className={`fixed top-0 z-50 w-full flex flex-row p-4 items-center justify-between ${scrolled ? "bg-cyber-navy/70 backdrop-blur-3xl": ""}`}>
+      <Link to={"/"} className="h-10"><img src="CyberTrackLogo.webp" alt="" className="h-10 ml-4" /></Link>
       <ul className="flex flex-row gap-6">
         <li
           className="nav-item flex flex-row items-center relative cursor-pointer"
