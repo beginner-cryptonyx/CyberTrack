@@ -2,6 +2,11 @@
 
 @theme {
   --color-cyber-navy: #0f172a;
+  --color-cyber-navy-2: #0c1529;
   --color-cyber-blue: #2563eb;
   --color-cyber-teal: #14b8a6;
+}
+
+body{
+  background-color: #14b8a6;
 }

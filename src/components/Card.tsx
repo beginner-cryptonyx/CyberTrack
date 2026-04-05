@@ -13,12 +13,12 @@ export default function Card({ question, service, slug, points, icon }: CardProp
   const Icon = Icons[icon as keyof typeof Icons] as React.ElementType;
   return (
     <Link to={`/services/${slug}`}
-      className="group relative overflow-hidden rounded-2xl pt-5 pr-5 pl-7 pb-5 m-2 bg-gray-900 border border-white/10 
-            transition-all duration-4 00 hover:bg-white/10 hover:scale-[1.02] cursor-pointer w-fit z-10 "
+      className="group relative overflow-hidden rounded-2xl rounded-tr-sm pt-5 pr-5 pl-6 pb-5 m-2 bg-gray-900 border border-white/10 
+            transition-all duration-400 hover:bg-white/10 hover:scale-[1.02] cursor-pointer w-fit z-10 hover:border-blue-400/30 min-h-40"
     >
       <div className="absolute top-4 right-4 flex items-center justify-center w-15 h-15">
         <div
-          className="absolute inset-0 bg-blue-500/70 opacity-0
+          className="absolute inset-0 bg-blue-500/40 opacity-0
                 group-hover:opacity-100 transition duration-800 text-center rounded-full blur-lg "
         ></div>
 
@@ -34,14 +34,14 @@ export default function Card({ question, service, slug, points, icon }: CardProp
 
         <p className="text-sm text-gray-400 mt-2">
           {service}
-          <span className="transtion-all duration-400 group-hover:translate-x-10 inline-block group-hover:opacity-0">
+          <span className="transtion-all duration-400 group-hover:translate-x-4 inline-block group-hover:opacity-50">
             →
           </span>
         </p>
       </div>
 
       <div
-        className="transition-all duration-400 ease-out
+        className="transition-all duration-400 ease-out z-50
             max-h-0 overflow-hidden opacity-0
             group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-4"
       >

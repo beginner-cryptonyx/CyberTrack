@@ -4,7 +4,7 @@ import ServicePage from "./pages/ServicePage";
 
 function App() {
   return (
-    <div className="bg-cyber-navy min-h-screen text-white">
+    <div className="bg-cyber-navy-2 min-h-screen text-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services/:slug" element={<ServicePage />} />
