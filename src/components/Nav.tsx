@@ -42,12 +42,12 @@ function DesktopNav() {
           </div>
         </li>
         <li className="nav-item">
-          <Link to={"/"} className="">
+          <Link to={"/about"} className="">
             About us
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/"} className="">
+          <Link to={"/reach-us"} className="">
             Reach Us
           </Link>
         </li>
