@@ -1,6 +1,28 @@
 @import "tailwindcss";
+@import "./index.css";
 
 .nav-item {
     @apply cursor-pointer;
 }
 
+.form-input{
+    @apply border outline-0 p-2 mt-1 py-3 border-cyber-blue/40 bg-black/30 focus:border-cyber-blue/60 rounded-sm;
+}
+.form-element{
+    @apply flex flex-col my-5 ;
+    
+}
+.form-element>label{
+    @apply text-xs ml-1 font-semibold transition duration-200
+}
+
+input::placeholder {
+  transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+textarea::placeholder {
+  white-space: pre-line;
+}
