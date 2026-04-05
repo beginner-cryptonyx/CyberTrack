@@ -12,7 +12,7 @@ export default function Hero() {
       >
         <source src="video/globe.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/75 to-black/60 "></div>
+      <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/70 to-black/50 "></div>
       <div className="relative z-10 max-w-3xl ml-10 px-6 py-22">
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.1]">
           Your IT Infrastructure,
@@ -41,7 +41,7 @@ export default function Hero() {
         {/* Stats row */}
       </div>
       <div className="w-[40%]">
-        <div className="mt-5 flex gap-8 text-sm text-gray-400 flex-col w-fit mx-auto">
+        <div className="mt-10 flex gap-8 text-sm text-gray-400 flex-col w-fit ml-20 ">
           <Statistic className="translate-x-9" value={"150K+"} text="Person-Days"></Statistic>
           <Statistic className="-translate-x-15 -translate-y-3" value={7} text="Countries"></Statistic>
           <Statistic className="translate-x-19" value={3} text="Continents"></Statistic>
