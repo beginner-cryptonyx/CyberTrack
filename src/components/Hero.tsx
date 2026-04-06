@@ -1,8 +1,34 @@
+import { useEffect, useState } from "react";
 import Statistic from "./Statistic";
+import { useScramble } from 'use-scramble';
 
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+
+  const phrases = ["Your IT Infrastructure","Your RCM"]
+
+  const { ref, replay } = useScramble({
+    text: phrases[index],
+    speed: 0.2,
+    tick: 1,
+    step: 1,
+    scramble: 2,
+    seed: 1,
+    chance:0
+  });
+
+  // When index changes, replay fires automatically because text prop changed.
+  // This just drives the rotation.
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIndex((i) => (i + 1) % phrases.length);
+    }, 4000);
+
+    return () => clearTimeout(timeout);
+  }, [index]);
+
   return (
-    <div className="relative flex flex-row overflow-hidden pt-10 min-h-screen">
+    <div className="relative flex flex-row overflow-hidden pt-10 ">
       <video
         autoPlay
         loop
@@ -14,8 +40,8 @@ export default function Hero() {
       </video>
       <div className="absolute inset-0 bg-linear-to-r from-black/85 via-black/70 to-black/50 "></div>
       <div className="relative z-10 max-w-3xl ml-10 px-6 py-22">
-        <h1 className="text-5xl md:text-6xl font-bold leading-[1.1]">
-          Your IT Infrastructure,
+        <h1 className="text-5xl md:text-6xl font-bold leading-[1.1]" >
+          <span ref={ref} className="absolute text-nowrap">Your IT Infrastructure</span>
           <br />
           Running Like It <span className="text-cyber-blue">Should</span>.
         </h1>
