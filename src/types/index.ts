@@ -18,7 +18,8 @@ export type ServiceSection = {
 export type Service = {
   name: string;
   slug: string;
-  icon: string;              
+  icon: string;    
+  description: string          
 
   // Card component fields
   cardQuestion: string;      

@@ -6,8 +6,11 @@ export const services: Service[] = [
     name: "Application Management",
     slug: "application-management",
     icon: "Package",
+    description:
+      "Build and manage scalable logistics, warehouse, and order management systems with real-time visibility and seamless integrations.",
 
-    cardQuestion: "Struggling to manage logistics, warehouses, or order systems?",
+    cardQuestion:
+      "Struggling to manage logistics, warehouses, or order systems?",
     cardPoints: [
       "Real-time logistics & transport tracking",
       "AI-powered warehouse management",
@@ -59,6 +62,8 @@ export const services: Service[] = [
     name: "Data Management",
     slug: "data-management",
     icon: "BarChart2",
+    description:
+      "Transform complex data into actionable insights with AI-powered reporting, modern data platforms, and ERP solutions.",
 
     cardQuestion: "Drowning in data with no clear insights or reporting?",
     cardPoints: [
@@ -127,6 +132,8 @@ export const services: Service[] = [
     name: "Digital Transformation",
     slug: "digital-transformation",
     icon: "Zap",
+    description:
+      "Modernize legacy systems and processes with a clear digital strategy, automation, and future-ready technologies.",
 
     cardQuestion: "Still running on legacy processes that slow you down?",
     cardPoints: [
@@ -176,8 +183,11 @@ export const services: Service[] = [
     name: "Infrastructure Management",
     slug: "infrastructure-management",
     icon: "Server",
+    description:
+      "Ensure reliable, secure, and scalable IT operations with end-to-end infrastructure and cloud management services.",
 
-    cardQuestion: "Is your IT infrastructure a bottleneck instead of a backbone?",
+    cardQuestion:
+      "Is your IT infrastructure a bottleneck instead of a backbone?",
     cardPoints: [
       "Full IT infrastructure lifecycle management",
       "Cloud management across AWS, Azure, OCI",

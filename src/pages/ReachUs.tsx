@@ -54,21 +54,15 @@ const items = [
 function TrustStrip() {
   return (
     <div className="grid gap-3 grid-cols-2 p-5 mx-auto">
-      {items.map(({ icon: Icon, text }, i) => (
-        <>
-          <div key={text} className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-full border border-blue-500/30 bg-blue-500/10 flex items-center justify-center shrink-0">
-              <Icon className="w-3.5 h-3.5 text-blue-400" strokeWidth={1.75} />
-            </div>
-            <span className="text-sm text-gray-300 whitespace-nowrap">
-              {text}
-            </span>
+      {items.map(({ icon: Icon, text }) => (
+        <div key={text} className="flex items-center gap-2">
+          <div className="w-7 h-7 rounded-full border border-blue-500/30 bg-blue-500/10 flex items-center justify-center shrink-0">
+            <Icon className="w-3.5 h-3.5 text-blue-400" strokeWidth={1.75} />
           </div>
-
-          {/* {i < items.length - 1 && (
-            <div key={`sep-${i}`} className="w-px h-4 bg-white/15" />
-          )} */}
-        </>
+          <span className="text-sm text-gray-300 whitespace-nowrap">
+            {text}
+          </span>
+        </div>
       ))}
     </div>
   );
